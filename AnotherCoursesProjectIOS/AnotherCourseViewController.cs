@@ -14,8 +14,21 @@ namespace AnotherCoursesProjectIOS
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+
+            buttonPrevious.TouchUpInside += ButtonPrevious_TouchUpInside;
+            buttonNext.TouchUpInside += ButtonNext_TouchUpInside;
         }
 
+        private void ButtonPrevious_TouchUpInside(object sender, EventArgs e)
+        {
+            labelTitle.Text = "Prevoius Clicked";
+        }
+
+        private void ButtonNext_TouchUpInside(object sender, EventArgs e)
+        {
+            labelTitle.Text = "Next Clicked";
+        }
+        
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
