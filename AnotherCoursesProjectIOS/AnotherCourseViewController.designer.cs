@@ -19,23 +19,39 @@ namespace AnotherCoursesProjectIOS
 		UIKit.UIButton buttonPrevious { get; set; }
 
 		[Outlet]
+		UIKit.UIImageView imageCourse { get; set; }
+
+		[Outlet]
 		UIKit.UILabel labelTitle { get; set; }
+
+		[Outlet]
+		UIKit.UITextView textDescription { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (buttonPrevious != null) {
-				buttonPrevious.Dispose ();
-				buttonPrevious = null;
-			}
-
 			if (buttonNext != null) {
 				buttonNext.Dispose ();
 				buttonNext = null;
 			}
 
+			if (buttonPrevious != null) {
+				buttonPrevious.Dispose ();
+				buttonPrevious = null;
+			}
+
 			if (labelTitle != null) {
 				labelTitle.Dispose ();
 				labelTitle = null;
+			}
+
+			if (imageCourse != null) {
+				imageCourse.Dispose ();
+				imageCourse = null;
+			}
+
+			if (textDescription != null) {
+				textDescription.Dispose ();
+				textDescription = null;
 			}
 		}
 	}
