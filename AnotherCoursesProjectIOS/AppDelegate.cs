@@ -16,13 +16,17 @@ namespace AnotherCoursesProjectIOS
             set;
         }
 
+        AnotherCourseViewController viewController;
+
         public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
             // create a new window instance based on the screen size
             Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
             // If you have defined a root view controller, set it here:
-            // Window.RootViewController = myViewController;
+            viewController = new AnotherCourseViewController();
+
+            Window.RootViewController = viewController;
 
             // make the window visible
             Window.MakeKeyAndVisible();
