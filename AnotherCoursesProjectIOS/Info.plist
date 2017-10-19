@@ -30,5 +30,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleName</key>
+	<string>AnotherCoursesProjectIOS</string>
 </dict>
 </plist>
