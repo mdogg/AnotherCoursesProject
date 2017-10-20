@@ -109,5 +109,11 @@
     <BundleResource Include="Resources\member03_on.png" />
     <BundleResource Include="Resources\member04_on.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoursesLibrary\CoursesLibrary.csproj">
+      <Project>{789594d1-7607-4766-83a8-5b09d1bf4ea1}</Project>
+      <Name>CoursesLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

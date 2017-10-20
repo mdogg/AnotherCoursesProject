@@ -32,7 +32,7 @@
         android:layout_above="@id/textTitle"
         android:id="@+id/imageView1" />
     <ImageView
-        android:src="@drawable/fcs"
+        android:src="@drawable/member03_on"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:id="@+id/imageCourse"

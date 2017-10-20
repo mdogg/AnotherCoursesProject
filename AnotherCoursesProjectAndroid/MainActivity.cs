@@ -40,6 +40,7 @@ namespace AnotherCoursesProjectAndroid
 
             courseManager = new CourseManager();
             courseManager.MoveFirst();
+            //UpdateUI();
         }
         
         private void ButtonPrev_Click(object sender, System.EventArgs e)
@@ -66,7 +67,9 @@ namespace AnotherCoursesProjectAndroid
         {
             textTitle.Text = courseManager.Current.Title;
             textDescription.Text = courseManager.Current.Description;
-            imageCourse.SetImageResource(Resource.Drawable.member03_on);
+            imageCourse.SetImageResource(ResourceHelper.TranslateDrawableWithReflection(courseManager.Current.Image));
+            buttonPrev.Enabled = courseManager.CanMovePrev;
+            buttonNext.Enabled = courseManager.CanMoveNext;
         }
     }
 }

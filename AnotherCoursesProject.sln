@@ -71,7 +71,7 @@ Global
 		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.AppStore|iPhone.Build.0 = AppStore|iPhone
 		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
 		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
 		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.Debug|iPhone.Build.0 = Debug|iPhone
 		{429F45AE-435E-48B5-B5EE-CE29D7E3C44A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
