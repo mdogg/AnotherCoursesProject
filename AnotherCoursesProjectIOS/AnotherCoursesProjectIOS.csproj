@@ -104,6 +104,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\member01_on.png" />
+    <BundleResource Include="Resources\member02_on.png" />
+    <BundleResource Include="Resources\member03_on.png" />
+    <BundleResource Include="Resources\member04_on.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

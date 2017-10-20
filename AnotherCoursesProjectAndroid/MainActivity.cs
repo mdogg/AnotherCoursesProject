@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using CoursesLibrary;
+using System;
 
 namespace AnotherCoursesProjectAndroid
 {
@@ -12,6 +14,8 @@ namespace AnotherCoursesProjectAndroid
         TextView textTitle;
         ImageView imageCourse;
         TextView textDescription;
+        CourseManager courseManager;
+       
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -33,20 +37,36 @@ namespace AnotherCoursesProjectAndroid
             buttonPrev.Click += ButtonPrev_Click;
 
             buttonNext.Click += ButtonNext_Click;
+
+            courseManager = new CourseManager();
+            courseManager.MoveFirst();
         }
         
         private void ButtonPrev_Click(object sender, System.EventArgs e)
         {
-            textTitle.Text = "Previous Clicked";
-            textDescription.Text = "This appears when previous is clicked in the description";
-            imageCourse.SetImageResource(Resource.Drawable.cb2);
+            courseManager.MovePrev();
+            UpdateUI();
+            //textTitle.Text = "Previous Clicked";
+            //textDescription.Text = "This appears when previous is clicked in the description";
+            //imageCourse.SetImageResource(Resource.Drawable.cb2);
+
         }
 
         private void ButtonNext_Click(object sender, System.EventArgs e)
         {
-            textTitle.Text = "Next Clicked";
-            textDescription.Text = "This appears when NEXT is clicked in the description";
-            imageCourse.SetImageResource(Resource.Drawable.fcs);
+            courseManager.MoveNext();
+            UpdateUI();
+            //textTitle.Text = "Next Clicked";
+            //textDescription.Text = "This appears when NEXT is clicked in the description";
+            //imageCourse.SetImageResource(Resource.Drawable.fcs);
+            
+        }
+
+        private void UpdateUI()
+        {
+            textTitle.Text = courseManager.Current.Title;
+            textDescription.Text = courseManager.Current.Description;
+            imageCourse.SetImageResource(Resource.Drawable.member03_on);
         }
     }
 }
